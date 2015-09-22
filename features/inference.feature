@@ -5,6 +5,6 @@ Feature: Inference
 
   Scenario: User inputs simple syllogism
     Given I input "All cats are mammals"
-    And I input "All mammals have fur"
-    When I type "Do all cats have fur?"
+    And I input "All mammals are furry"
+    When I type "Are all cats furry?"
     Then the output should be "Yes"
